@@ -1,1 +1,1 @@
-Tomagotchi Project Readme
+Tamagotchi Project Readme
