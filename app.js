@@ -1,7 +1,10 @@
-//Create game class pluss event lsiteners/handlers to call methods
-const Game = function (hunger, sleepiness, boredom, age) {
-    this.hunger = 0
-    this.sleepiness = 0
-    this.boredom = 0
-    this.age = 0
+//Create game class or object plus event lsiteners/handlers to call methods
+class Game {
+    constructor(hunger, sleepiness, boredom, age) {
+    this.hunger = hunger
+    this.sleepiness = sleepiness
+    this.boredom = boredom
+    this.age = age
 }
+}
+const YoungPet = new Game(0, 0, 0)
