@@ -1,4 +1,4 @@
-//Create game class or object plus event lsiteners/handlers to call methods
+//Create game class or object plus event listeners/handlers to call methods
 class Game {
     constructor(hunger, sleepiness, boredom, age) {
     this.hunger = hunger
@@ -8,6 +8,7 @@ class Game {
 }
 }
 const YoungPet = new Game(0, 0, 0)
+//create prompt to ask pets name, use innerText to add to page?
 
 //metric counters - https://www.geeksforgeeks.org/how-to-make-animated-counter-using-javascript/
 let counts = setInterval(updated);
@@ -19,3 +20,8 @@ function updated() {
         clearInterval(counts);
     }
 }
+function myName(){
+   const petName = prompt("What would you like to name your new cat?")
+   
+}
+document.getElementById(newName).textContent = petName;
