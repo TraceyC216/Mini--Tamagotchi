@@ -1,36 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@500&display=swap" rel="stylesheet">
     <script src="app.js" defer></script>
     <title>Tamagatchi Kitty</title>
 </head>
-<body>
-        <h1 id="newName" onclick="myName()">Click here to name your cat</h1>
-        <h2>How am I doing?</h2>
-        <h3>Hunger (1-10)</h3>
-        <div id="foodCounter">
-            <!--food-->
-        </div>
-        <h3>Sleepiness (1-10)</h3>   
-        <div id="sleepCounter">
-            <!--sleep-->
-        </div> 
-        <h3>Boredom (1-10)</h3> 
-        <div id="boredCounter">
-            <!--bored-->
-        </div>
-        <img src="cat1.png">
 
+<body>
+    <h1 id="newName" onclick="myName()">Click here to name your cat</h1>
+    <h2>How am I doing?</h2>
+    <h3>Hunger (1-10)</h3>
+    <div id="foodCounter">
+        <!--food-->
+    </div>
+    <h3>Sleepiness (1-10)</h3>
+    <div id="sleepCounter">
+        <!--sleep-->
+    </div>
+    <h3>Boredom (1-10)</h3>
+    <div id="boredCounter">
+        <!--bored-->
+    </div>
+    <img id="cat1" src="cat1.png">
+
+    <div class="entertainment">
         <h3>Entertainment Corner</h3>
-        <button div="food" class="btn">feed your cat</button>
-        <button div="light" class="btn">Turn off the lights</button>
-        <button div="play" class="btn">Play with your cat</button>
-    
-  
-    <a href="landingpage.html"><button>Start over</button></a>
-    <footer><a href="https://www.freepik.com/free-vector/pets-growth-stages-set-isolated-icons-cartoon-characters-cat-dog-different-age-vector-illustration_26763266.htm">Image by macrovector</a> on Freepik</footer>
+        <button id="food" class="btn" onclick="feedCat()"><img src="catfood2.png" alt="can of cat food"
+                height="100"></button>
+        <button id="light" class="btn" onclick="lightOff()"><img src="bulb-ceramic-fixture-chain.svg"
+                    alt="pull string light bulb" height="100"></button>
+        <button id="play" class="btn" onclick="playCat()"><img src="catyarn.png" alt="ball of yarn"
+                height="100"></button>
+    </div>
+
+    <a href="landingpage.html"><button>Return to beginning</button></a>
+    <footer><a
+            href="https://www.freepik.com/free-vector/pets-growth-stages-set-isolated-icons-cartoon-characters-cat-dog-different-age-vector-illustration_26763266.htm">Image
+            by macrovector</a> on Freepik<br>
+        <a href="vecteezy.com">vecteezy.com</a>
+    </footer>
 </body>
+
 </html>

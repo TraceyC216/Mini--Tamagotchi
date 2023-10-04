@@ -21,7 +21,46 @@ function updated() {
     }
 }
 function myName(){
-   const petName = prompt("What would you like to name your new cat?")
-   
+   let petName = prompt("What would you like to name your new cat?");
+   document.getElementById("newName").textContent = petName; 
+ 
+
 }
-document.getElementById(newName).textContent = petName;
+
+
+
+const light = document.getElementById("light");
+const body = document.body;
+
+light.addEventListener("click", () => { 
+if ("livingroom.jpg") {
+    body.style.backgroundImage = 'url("nighttimeRoom.jpg")';
+} else {
+    body.style.backgroundImage = 'url("livingroom.jpg")';
+}
+})
+
+const food = document.getElementById("food");
+const cat1 = document.getElementById("cat1");
+
+const imageSources = ["cat1.png", "cat6.png"];
+
+let currentImageIndex = 0;
+
+food.addEventListener("click", function(){
+    currentImageIndex = (currentImageIndex + 1) % imageSources.length;
+    cat1.src = imageSources[currentImageIndex];
+});
+
+const play = document.getElementById("play");
+const kitty1 = document.getElementById("cat1");
+
+const imageSource = ["cat1.png", "cat3.png"];
+
+let currentImagesIndex = 0;
+
+play.addEventListener("click", function(){
+    currentImagesIndex = (currentImagesIndex + 1) % imageSource.length;
+    cat1.src = imageSource[currentImagesIndex];
+});
+
