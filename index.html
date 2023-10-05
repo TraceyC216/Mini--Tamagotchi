@@ -4,52 +4,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylestart.css">
+
     <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@500&display=swap" rel="stylesheet">
-    <script src="app.js" defer></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <title>Tamagatchi Kitty</title>
+    <title>Welcome</title>
 </head>
 
 <body>
-    <h1 id="newName" onclick="myName()">Click here to name your cat</h1>
-    <center><button id="meet">Here kitty, kitty</button></center>
-    <h2>How am I doing?</h2>
-
-    <h3>Hunger (1-10)</h3>
-    <div id="foodProgress">
-        <div id="foodCounter"></div>
+    <h1>Congratulations on your new kitten!</h1>
+    <div id="rules">
+        <p>In order for your cat to grow up to be happy and healthy, it needs more than just love. <br />
+            You'll also need to give it three things:
+        </p>
+        <ul>
+            <li>Good food</li>
+            <li>Some playtime</li>
+            <li>And don't forget that all important sleep!</li>
+        </ul>
+        <p>If you neglect any of these requirement, your precious pet could wither away</p>
     </div>
-    <br /><button onclick="hungerCheck(); hungerDown()">Click to see if it's feeding time!</button>
-    <h3 onload="sleepCount">Sleepiness (1-10)</h3>
-    <div id="sleepProgress">
-        <div id="sleepCounter"></div>
+    <table class="center">
+        <tr>
+            <td class="compare">
+                <p>Your goal is to get from this:</p>
+            </td>
+            <td>
+                <p class="compare">to this:</p>
+            </td>
+        </tr>
+        <tr>
+            <td class="kitty"><img src="cat1.png"></td>
+            <td class="kitty"><img src="cat7.png"></td>
+        </tr>
+    </table>
+    <h2>Are you ready to begin?</h2>
+    <div class="container">
+        <a href="catgame.html">
+            <div class="startHere"><button>Meet your cat</button></div>
+        </a>
     </div>
-    <br /><button onclick="sleepCheck();">Click to see if I'm ready for a nap!</button>
-    
-    <h3 onload="boredCount">Boredom (1-10)</h3>
-    <div id="boredProgress">
-        <div id="boredCounter"></div>
-    </div>
-    <br /><button id="play1" onclick="boredCheck()">Click to see if I'm ready to play!</button>
-    <h3>AGE</h3>
-    <div id="ageCounter"></div>
-    <object name="cat.age"></object>
-    
-
-    <img id="cat1" src="cat1.png">
-
-    <div class="entertainment">
-        <h3>Entertainment Corner</h3>
-        <button id="food" class="btn" onclick="feedCat()"><img src="catfood2.png" alt="can of cat food"
-                height="100"></button>
-        <button id="light" class="btn" onclick="lightOff()"><img src="bulb-ceramic-fixture-chain.svg"
-                alt="pull string light bulb" height="100"></button>
-        <button id="play" class="btn" onclick="playCat()"><img src="catyarn.png" alt="ball of yarn"
-                height="100"></button>
-    </div>
-
-    <a href="landingpage.html"><button>Return to beginning</button></a>
     <footer><a
             href="https://www.freepik.com/free-vector/pets-growth-stages-set-isolated-icons-cartoon-characters-cat-dog-different-age-vector-illustration_26763266.htm">Image
             by macrovector</a> on Freepik<br>

@@ -7,12 +7,12 @@ class pet {
         this.age = age
     }
 }
+const cat = new pet(0, 0, 0, 0)
 
 //animate cat
-const cat = new pet(0, 0, 0, 0)
 $(document).ready(function () {
-    $('meet').click(function () {
-        $('img[src="cat1.png"]').animate({ left: '750px' }, slow)
+    $('.meet').click(function () {
+        $('img[src="cat1.png"]').animate({ left: '750px' }, 'slow');
     });
 });
 
