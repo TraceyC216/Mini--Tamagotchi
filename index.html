@@ -7,24 +7,36 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@500&display=swap" rel="stylesheet">
     <script src="app.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <title>Tamagatchi Kitty</title>
 </head>
 
 <body>
     <h1 id="newName" onclick="myName()">Click here to name your cat</h1>
+    <center><button id="meet">Here kitty, kitty</button></center>
     <h2>How am I doing?</h2>
+
     <h3>Hunger (1-10)</h3>
-    <div id="foodCounter">
-        <!--food-->
+    <div id="foodProgress">
+        <div id="foodCounter"></div>
     </div>
-    <h3>Sleepiness (1-10)</h3>
-    <div id="sleepCounter">
-        <!--sleep-->
+    <br /><button onclick="hungerCheck(); hungerDown()">Click to see if it's feeding time!</button>
+    <h3 onload="sleepCount">Sleepiness (1-10)</h3>
+    <div id="sleepProgress">
+        <div id="sleepCounter"></div>
     </div>
-    <h3>Boredom (1-10)</h3>
-    <div id="boredCounter">
-        <!--bored-->
+    <br /><button onclick="sleepCheck();">Click to see if I'm ready for a nap!</button>
+    
+    <h3 onload="boredCount">Boredom (1-10)</h3>
+    <div id="boredProgress">
+        <div id="boredCounter"></div>
     </div>
+    <br /><button id="play1" onclick="boredCheck()">Click to see if I'm ready to play!</button>
+    <h3>AGE</h3>
+    <div id="ageCounter"></div>
+    <object name="cat.age"></object>
+    
+
     <img id="cat1" src="cat1.png">
 
     <div class="entertainment">
@@ -32,7 +44,7 @@
         <button id="food" class="btn" onclick="feedCat()"><img src="catfood2.png" alt="can of cat food"
                 height="100"></button>
         <button id="light" class="btn" onclick="lightOff()"><img src="bulb-ceramic-fixture-chain.svg"
-                    alt="pull string light bulb" height="100"></button>
+                alt="pull string light bulb" height="100"></button>
         <button id="play" class="btn" onclick="playCat()"><img src="catyarn.png" alt="ball of yarn"
                 height="100"></button>
     </div>
